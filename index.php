@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Pagina blog
+*/
 get_header();
 
     $url_image = get_the_post_thumbnail_url();

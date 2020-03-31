@@ -29,11 +29,6 @@
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-dribbble"></i>
-              </a>
-            </li>
           </ul>
         </div>
         

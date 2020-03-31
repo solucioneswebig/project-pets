@@ -3,7 +3,7 @@
 function wp_theme_main_style(){
   wp_enqueue_style('bootstrap-css',get_template_directory_uri().'/assets/bootstrap/css/bootstrap.min.css',false);
   wp_enqueue_style('fontawesome',get_template_directory_uri().'/assets/fontawesome/css/all.min.css',false);
-
+   
   wp_enqueue_style('owlcarousel-css',get_template_directory_uri().'/assets/css/owl.carousel.min.css',false);
   wp_enqueue_style('owlcarousel-theme-css',get_template_directory_uri().'/assets/css/owl.theme.default.min.css',false);
 

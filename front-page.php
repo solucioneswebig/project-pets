@@ -1,4 +1,7 @@
 <?php 
+/*
+Template Name: Pagina Home
+*/
 get_header();
 ?>
 
@@ -12,7 +15,7 @@ get_header();
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+                        <p class="text-white-75 font-weight-light mb-5">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                     </div>
                 </div>
@@ -25,7 +28,7 @@ get_header();
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">We've got what you need!</h2>
                         <hr class="divider light my-4" />
-                        <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+                        <p class="text-white-50 mb-4">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.</p>
                         <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
                     </div>
                 </div>
@@ -140,32 +143,34 @@ get_header();
         <!-- Call to action section-->
         <section class="page-section bg-dark text-white">
             <div class="container text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+                <h2 class="mb-4">Lorem Ipsum es simplemente el texto de relleno</h2>
                 <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
 
             </div>
         </section>
        
         <!-- Contact section-->
-        <section class="page-section" id="contact">
-            <div class="container">
+        <section class="contactanos" id="contact">
+            <div class="wrapper-contact">
+            <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">Contáctanos</h2>
+                        <h2 class="mt-5 text-dark">Contáctanos</h2>
                         <hr class="divider my-4" />
-                        <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                        <p class="mb-5 text-dark">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row pb-5">
                     <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                        <div>+1 (555) 123-4567</div>
+                        <i class="fas fa-phone text-dark fa-3x mb-3"></i>
+                        <div class="text-dark">+1 (555) 123-4567</div>
                     </div>
-                    <div class="col-lg-4 mr-auto text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i
-                        ><!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                    <div class="col-lg-4 mr-auto text-center text-dark">
+                        <i class="fas fa-envelope text-dark fa-3x mb-3"></i
+                        ><!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block text-dark" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
