@@ -1,58 +1,89 @@
-$(document).ready(function() {
-  //variables
-  var pass1 = $("[name=password1]");
-  var pass2 = $("[name=password]");
-  var confirmacion = "Las contraseñas si coinciden";
-  var longitud =
-    "La contraseña debe estar formada entre 6-10 carácteres (ambos inclusive)";
-  var negacion = "No coinciden las contraseñas";
-  var vacio = "La contraseña no puede estar vacía";
-  //oculto por defecto el elemento span
-  var span = $("<span></span>").insertAfter(pass2);
-  span.hide();
-  //función que comprueba las dos contraseñas
-  function coincidePassword() {
-    var valor1 = pass1.val();
-    var valor2 = pass2.val();
-    //muestro el span
-    span.show().removeClass();
-    //condiciones dentro de la función
-    if (valor1 != valor2) {
-      span.text(negacion).addClass("negacion");
-    }
-    if (valor1.length == 0 || valor1 == "") {
-      span.text(vacio).addClass("negacion");
-    }
-    if (valor1.length < 6 || valor1.length > 10) {
-      span.text(longitud).addClass("negacion");
-    }
-    if (valor1.length != 0 && valor1 == valor2) {
-      span
-        .text(confirmacion)
-        .removeClass("negacion")
-        .addClass("confirmacion");
-    }
-  }
-  //ejecuto la función al soltar la tecla
-  pass2.keyup(function() {
-    coincidePassword();
-  });  
+(function($) {
 
 
-  $('#sidebarCollapse').on('click', function () {
-    $('#sidebar').toggleClass('active');
-    $(this).toggleClass('active');
+$( document ).ready(function() {
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:5,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            dots:true
+        },
+        395:{
+          items:2,
+          nav:false,
+            dots:true
+        },
+        570:{
+            items:4,
+            nav:false,
+            dots:true
+        },
+    }
+});
+
+
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 72)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
   });
 
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
 
-  var url = window.location.href;
-  var indice = url.split("/");
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 75
+  });
 
-  var pagActual = indice[indice.length -1];
+  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-scrolled");
+    } else {
+      $("#mainNav").removeClass("navbar-scrolled");
+    }
+  };
+  // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
 
-  if(pagActual == "cuenta" || pagActual == "cuenta#" ){
-    $("#menu-principal").addClass("d-none");
-  }
-
+  /*
+  // Magnific popup calls
+  $('#portfolio').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1]
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    }
+  });
+*/
 
 });
+
+})(jQuery); // End of use strict

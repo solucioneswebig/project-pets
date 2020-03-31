@@ -15,7 +15,7 @@ Header
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 <div class="container">
-  <a class="navbar-brand js-scroll-trigger" href="#page-top">Logo<!--<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" width="120px">--></a>
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">MP<!--<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" width="120px">--></a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
     Menu
     <i class="fas fa-bars"></i>
@@ -23,19 +23,24 @@ Header
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav text-uppercase ml-auto">
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#services">Home</a>
+        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <a class="nav-link js-scroll-trigger" href="#services">Nosotros</a>
       </li>
+      <div class="nav-item dropdown">
+          <a class="nav-link js-scroll-trigger dropdown-toggle" data-parent="#accordion" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Servicios <i class="fas fa-angle-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Personal trainer</a>
+            <a class="dropdown-item" href="#">Cuidado de niñ@s</a>
+            <a class="dropdown-item" href="#">Cuidado de ancianos</a>
+            <a class="dropdown-item" href="#">Paseador de perros</a>
+          </div>
+    </div>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#about">Service</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#team">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        <a class="nav-link js-scroll-trigger" href="#contact">Ayuda</a>
       </li>
     </ul>
   </div>

@@ -480,12 +480,12 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
-}
+} 
 
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/fondo-banner.jpg");
+  background-image: url("../assets/img/banner1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;

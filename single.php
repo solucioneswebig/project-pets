@@ -6,18 +6,17 @@ if ( have_posts() ) :
 
     $url_image = get_the_post_thumbnail_url();
 
-    if(!$url_image){
-    $fondo = "background: #000 !important;";
-    }else{
-      $fondo = "background-image: url(".$url_image.") !important;";
-    }
-    
+   
 
 ?>
 <!-- PAGINA SINGLE.PHP -->
 <!-- Header -->
-  <header class="fondo-blog-interna" style="<?php echo $fondo; ?>">
-    <div class="transparente" style="background-color: #00000080;">
+  <header class="fondo-blog-interna" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbnails/55.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;">
+    <div class="transparente" style="background-color: #00000088;">
     <div class="container">
       <div class="row justify-content-center">
       <div class="col-md-10 m-auto">
@@ -34,17 +33,33 @@ if ( have_posts() ) :
 <!--====SECCION N°1===-->
 <section>
     <div class="container">
-          <div class="row espacio-arriba-p">
+          <div class="row espacio-arriba-p espacio-bottom-p">
                 <div class="col-md-9">
-                 <p><?php echo the_content(); ?></p>
-                </div>
+                
+                  <div class="row">
+                           <img class="img-fluid imagen-blog-single" src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""> 
+                        </div>
+                 
+                   
+                     <div class="row">
+                            <p><?php echo the_content(); ?></p>
+                        </div>      
+
+                  
+                    </div>
+
+
                 <div class="col-md-3">
                 	<?php get_sidebar(); ?>
                 </div>
           </div>
     </div>
 </section>
-   
+
+
+
+    
+
 
 <?php
    
