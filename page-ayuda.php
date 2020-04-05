@@ -31,6 +31,11 @@ if ( have_posts() ) :
   <section class="py-5 bg-light">
       <div class="demo">
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Preguntas frecuentes</h2>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
