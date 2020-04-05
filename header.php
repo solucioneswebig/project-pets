@@ -24,10 +24,10 @@ Header
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav text-uppercase ml-auto">
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="http://localhost/article/home/">Home</a>
+        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#services">Nosotros</a>
+        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/nosotros">Nosotros</a>
       </li>
       <div class="nav-item dropdown">
           <a class="nav-link js-scroll-trigger dropdown-toggle" data-parent="#accordion" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,10 +41,10 @@ Header
           </div>
     </div>
     <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="http://localhost/article/blog/">Blog</a>
+        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/blog/">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="http://localhost/article/ayuda/">Ayuda</a>
+        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/ayuda/">Ayuda</a>
       </li>
     </ul>
   </div>
