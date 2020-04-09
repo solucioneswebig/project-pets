@@ -9,16 +9,23 @@ function wp_theme_main_style(){
 
   wp_enqueue_style('litbox-css',get_template_directory_uri().'/assets/lightbox/css/lightbox.min.css',false);
 
+  wp_enqueue_style('icofont-css',get_template_directory_uri().'/assets/icofont/icofont.min.css',false);
+  wp_enqueue_style('boxicons-css',get_template_directory_uri().'/assets/boxicons/css/boxicons.min.css',false);
+  wp_enqueue_style('venobox-css',get_template_directory_uri().'/assets/venobox/venobox.css',false);
+  wp_enqueue_style('aos-css',get_template_directory_uri().'/assets/aos/aos.css',false);
+
   wp_enqueue_style('animate-css',get_template_directory_uri().'/assets/animate/animate.min.css',false);
 
   wp_enqueue_style('style-css',get_template_directory_uri().'/assets/css/style.css',false);
   wp_enqueue_style('style5-css',get_template_directory_uri().'/assets/css/style5.css',false);
+   wp_enqueue_style('style1-css',get_template_directory_uri().'/assets/css/style1.css',false);
+   //wp_enqueue_style('style2-css',get_template_directory_uri().'/assets/css/style2.css',false);
 
   //wp_enqueue_style('responsive-css',get_template_directory_uri().'/css/responsive.css',false);
   //wp_enqueue_style('fonts-googles','https://use.fontawesome.com/releases/v5.3.1/css/all.css',false);
 
 }
-
+   
 
 
 
@@ -31,9 +38,7 @@ function insert_jquery(){
   
   wp_enqueue_script( 'bootstrap-min-js',get_template_directory_uri().'/assets/bootstrap/js/bootstrap.min.js' , array('jquery'), '4.3.1', true );
 
-
   wp_enqueue_script( 'wow-js',get_template_directory_uri().'/assets/wow/wow.min.js' , array('jquery'), '4.3.1', true );
-
 
   wp_enqueue_script( 'owlcarousel-js',get_template_directory_uri().'/assets/js/owl.carousel.min.js' , array('jquery'), '4.3.1', true );
 
@@ -44,11 +49,12 @@ function insert_jquery(){
 
   wp_enqueue_script( 'script-js', get_template_directory_uri().'/assets/js/script.js', array('jquery'), '1.0.0', true );
 
+
+
   //wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri().'/js/owl.carousel.js', array('jquery'), '1.0.0', true );
 
 }
 add_action('init','insert_jquery');
-
 
 
 // Register Custom Navigation Walker

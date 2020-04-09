@@ -11,7 +11,7 @@ get_header();
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
+                        <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source Lorem Ipsum Themes</h1>
                         <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
@@ -34,43 +34,95 @@ get_header();
                 </div>
             </div>
         </section>
-        <!-- Services section-->
+
+ <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+     
+        <div class="section-title">
+          <h2 class="text-center mt-0">Servicios que puedes encontrar</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <div class="icon-box">
+              <div class="icon"> <i class="fas fa-paw icon-blue"></i></div>
+              <h4 class="title"><a href="">Mascotas</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+            <div class="icon-box">
+              <div class="icon"> <i class="fas fa-4x fa-child icon-blue"></i></div>
+              <h4 class="title"><a href="">Cuidado de niñ@s</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-4x fa-blind icon-blue"></i></div>
+              <h4 class="title"><a href="">Cuidado de Ancianos</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-4x fa-running icon-blue"></i></div>
+              <h4 class="title"><a href="">Personal Trainer</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+     <!--- 
         <section class="page-section" id="services">
             <div class="container">
-                <h2 class="text-center mt-0">Servicios que puedes encontrar</h2>
+               
                 <hr class="divider my-4" />
                 <div class="row">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                           <i class="fas fa-paw text-primary iconos mb-4"></i>
-                            <h3 class="h4 mb-2">Mascotas</h3>
+                          
+                            <h3 class="h4 mb-2"></h3>
                             <p class="text-muted mb-0">Our themes are updated regularly to keep them bug</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <i class="fas fa-4x fa-child text-primary iconos mb-4"></i>
-                            <h3 class="h4 mb-2">Cuidado de niñ@s</h3>
+                           
+                            <h3 class="h4 mb-2"></h3>
                             <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <i class="fas fa-4x fa-blind text-primary iconos mb-4"></i>
-                            <h3 class="h4 mb-2">Cuidado de Ancianos</h3>
+                            
+                            <h3 class="h4 mb-2"></h3>
                             <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <i class="fas fa-4x fa-running text-primary iconos mb-4"></i>
-                            <h3 class="h4 mb-2">Personal Trainer</h3>
+                            
+                            <h3 class="h4 mb-2"></h3>
                             <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
+
+        
       
         <!-- Portfolio section-->
         <section id="portfolio">
