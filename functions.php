@@ -72,9 +72,19 @@ function register_my_menu() {
 add_theme_support('post-thumbnails');
 
 //Some simple code for our widget-enabled sidebar
-if ( function_exists('register_sidebar') )
-    register_sidebar();
-
+if ( function_exists('register_sidebar') ){
+  $sidebar1 = array(
+    'before_widget' => '<div class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2 class="widgettitle">',
+    'after_title' => '</h2>',        
+    'name' => __( 'Sidebar principal', 'textdomain' ),  
+    'id'            => "sidebar-principal",
+  );  
+  register_sidebar($sidebar1);
+}
+    
+ 
 
 //Enable post and comments RSS feed links to head
 add_theme_support( 'automatic-feed-links' );

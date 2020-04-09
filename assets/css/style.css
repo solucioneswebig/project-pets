@@ -238,8 +238,7 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 0;
 }
 
 input,
@@ -4401,7 +4400,7 @@ input[type=button].btn-block {
   color: #fff;
 }
 .navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
   border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-dark .navbar-toggler-icon {
