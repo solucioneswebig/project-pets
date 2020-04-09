@@ -514,7 +514,7 @@ h1.titulo-blog {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 0px 0;
   overflow: hidden;
 }
 
@@ -631,16 +631,16 @@ section {
 }
 
 .about .icon-box .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border: 2px solid #ffcbba;
-  border-radius: 50px;
-  transition: 0.5s;
-  background: #fff;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #0033ff7d;
+    border-radius: 50px;
+    transition: 0.5s;
+    background: #fff;
 }
 
 .about .icon-box .icon i {
@@ -649,9 +649,11 @@ section {
 }
 
 .about .icon-box:hover .icon {
-  background: #ff5821;
-  border-color: #ff5821;
+    background: #3621ff;
+    border-color: #2128ff;
 }
+
+
 
 .about .icon-box:hover .icon i {
   color: #fff;

@@ -36,15 +36,15 @@ get_header();
         </section>
 
  <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section id="services " class="services section-bg">
       <div class="container">
      
-        <div class="section-title">
+        <div class="section-title mt-5 pt-5">
           <h2 class="text-center mt-0">Servicios que puedes encontrar</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div class="row">
+        <div class="row pb-5 mb-5">
           <div class="col-lg-3 col-md-3">
             <div class="icon-box">
               <div class="icon"> <i class="fas fa-paw icon-blue"></i></div>

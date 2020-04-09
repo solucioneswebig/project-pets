@@ -26,7 +26,7 @@ Header
         <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/nosotros">Nosotros</a>
+        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/sobre-nosotros/">Nosotros</a>
       </li>
       <div class="nav-item dropdown">
           <a class="nav-link js-scroll-trigger dropdown-toggle" data-parent="#accordion" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

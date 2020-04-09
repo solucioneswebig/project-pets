@@ -43,24 +43,43 @@ get_header();
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-md-6 icon-box">
-                  <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <div class="row">
+                   <div class="icon"> <i class="bx bx-receipt"></i></div>
+                  </div>
+                  <div class="row">
+                       <h4 class="text-dark font-weight-bold">Corporis voluptates sit</h4>
+                       <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  </div>
                 </div>
+
                 <div class="col-md-6 icon-box">
-                  <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
+                  <div class="row">
+                   <div class="icon"> <i class="bx bx-cube-alt"></i> </div>
+                  </div>
+                  <div class="row">
+                    <h4 class="text-dark font-weight-bold">Ullamco laboris nisi</h4>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </div>
                 </div>
+
                 <div class="col-md-6 icon-box">
-                  <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
+                  <div class="row">
+                    <div class="icon"> <i class="bx bx-images"></i> </div>
+                  </div>
+                  <div class="row">
+                    <h4 class="text-dark font-weight-bold">Labore consequatur</h4>
                   <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  </div>
                 </div>
+
                 <div class="col-md-6 icon-box">
-                  <i class="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
+                  <div class="row">
+                   <div class="icon"> <i class="bx bx-shield"></i> </div>
+                  </div>
+                  <div class="row">
+                    <h4 class="text-dark font-weight-bold">Beatae veritatis</h4>
                   <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                  </div>
                 </div>
               </div>
             </div><!-- End .content-->
