@@ -48,7 +48,7 @@ get_header();
                 if(get_the_post_thumbnail_url() != ""){
                   $url_image = get_the_post_thumbnail_url();
                 }else{
-                  $url_image = get_site_url()."/assets/img/service.jpg";
+                  $url_image = get_theme_file_uri()."/assets/img/service.jpg";
                 }
 
             ?>

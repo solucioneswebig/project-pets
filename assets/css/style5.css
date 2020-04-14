@@ -244,3 +244,11 @@ a.article, a.article:hover {
 /* ---
   CUSTOM STYLES
 */
+
+
+
+.img-list-service{
+    height: 100%;
+    object-fit: cover;
+  }
+  
