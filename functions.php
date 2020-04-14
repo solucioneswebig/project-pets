@@ -54,7 +54,7 @@ function insert_jquery(){
   //wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri().'/js/owl.carousel.js', array('jquery'), '1.0.0', true );
 
 }
-add_action('init','insert_jquery');
+add_action('wp_enqueue_scripts','insert_jquery');
 
 
 // Register Custom Navigation Walker
