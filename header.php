@@ -33,10 +33,19 @@ Header
            Servicios <i class="fas fa-angle-down"></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Personal trainer</a>
-            <a class="dropdown-item" href="#">Cuidado de niñ@s</a>
-            <a class="dropdown-item" href="#">Cuidado de ancianos</a>
-            <a class="dropdown-item" href="#">Paseador de perros</a>
+            <?php 
+
+            $terms = get_terms( array(
+              'taxonomy' => 'categoria_servicios',
+              'hide_empty' => false,
+            ) );
+
+            foreach($terms as $key => $value):
+            ?>
+            <a class="dropdown-item" href="<?php echo esc_url( get_term_link( $value->term_id,"categoria_servicios" ) ); ?>"><?php echo $value->name; ?></a>
+            <?php 
+            endforeach;
+            ?>
           </div>
     </div>
     <li class="nav-item">
