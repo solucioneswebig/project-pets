@@ -36,7 +36,7 @@ get_header();
     <div class="espacio-arriba-p espacio-bottom-p">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
+      <div class="col-md-3">
          <?php get_sidebar(); ?>
       </div>
 
@@ -60,8 +60,8 @@ get_header();
                             </a>
                             <div class="portfolio-caption">
                               <small class="text-uppercase"><?php echo  get_the_date( 'F').", ".get_the_date( 'Y'); ?></small>
-                              <a class="color-a" href="<?php echo get_permalink(); ?>"><h4 class="py-1 text-uppercase"><?php echo apply_filters( 'the_title', wp_trim_words( get_the_title(), 4, '&hellip;' ) ); ?></h4></a>
-                              <p class="pt-2"><?php echo apply_filters( 'the_content', wp_trim_words( get_the_content(), 15, '&hellip;' ) ); ?></p>
+                              <a class="color-a" href="<?php echo get_permalink(); ?>"><h4 class="py-1 text-uppercase"><?php echo the_title(); ?></h4></a>
+                              <p class="pt-2"><?php echo the_excerpt(); ?></p>
                               <a class="text-left color-a linea" href="<?php echo get_permalink(); ?>">Leer más</a>
                             </div>
                           </div>

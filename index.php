@@ -57,8 +57,8 @@ get_header();
                         </div>
                         <div class="col-md-8">
                               <div class="card-body text-left main">
-                                 <a href="<?php echo get_permalink(); ?>"><h5 class="main font-weight-bold text-uppercase"><?php echo apply_filters( 'the_title', wp_trim_words( get_the_title(), 4, '&hellip;' ) ); ?></h5></a>
-                                <p class="main"><?php echo apply_filters( 'the_content', wp_trim_words( get_the_content(), 10, '&hellip;' ) ); ?></p>
+                                 <a href="<?php echo get_permalink(); ?>"><h5 class="main font-weight-bold text-uppercase"><?php echo the_title(); ?></h5></a>
+                                <p class="main"><?php echo the_excerpt(); ?></p>
                                 <a class="text-left main" href="<?php echo get_permalink(); ?>">Ver más</a>
                               </div>
                           </div>
