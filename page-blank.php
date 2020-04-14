@@ -33,8 +33,8 @@ $fondo = "background: #000 !important;";
     </div>
     </div>
   </header> 
-<div class="wrapper">
-<section >
+<div class="wrapper-page">
+<section style="padding:120px 0px 80px 0px;">
 
 	<div class="container">
 		<div class="row">
@@ -45,7 +45,7 @@ $fondo = "background: #000 !important;";
 	</div>
 
 </section>	
-</div>       
+</div>        
 
 <?php
 	endwhile;

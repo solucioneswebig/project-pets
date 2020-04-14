@@ -31,7 +31,7 @@ get_header();
     </div>
   </header>
 
-  <div class="wrapper">
+  <div class="wrapper-page">
   <!--====SECCION N°1===-->
   <section class="bg-white" id="portfolio">
     <div class="espacio-arriba-p espacio-bottom-p">

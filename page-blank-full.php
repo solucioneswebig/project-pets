@@ -34,7 +34,7 @@ $fondo = "background: #000 !important;";
     </div>
   </header> 
 
-<div class="wrapper">
+<div class="wrapper-page">
 <section>
 
 	<div class="container-fluid">
