@@ -11,7 +11,7 @@ function wp_theme_main_style(){
 
   wp_enqueue_style('icofont-css',get_template_directory_uri().'/assets/icofont/icofont.min.css',false);
   wp_enqueue_style('boxicons-css',get_template_directory_uri().'/assets/boxicons/css/boxicons.min.css',false);
-  wp_enqueue_style('venobox-css',get_template_directory_uri().'/assets/venobox/venobox.css',false);
+  //wp_enqueue_style('venobox-css',get_template_directory_uri().'/assets/venobox/venobox.css',false);
   wp_enqueue_style('aos-css',get_template_directory_uri().'/assets/aos/aos.css',false);
 
   wp_enqueue_style('animate-css',get_template_directory_uri().'/assets/animate/animate.min.css',false);
