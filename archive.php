@@ -31,7 +31,7 @@ get_header();
     </div>
   </header>
 
-
+  <div class="wrapper">
   <!--====SECCION N°1===-->
   <section class="bg-white" id="portfolio">
     <div class="espacio-arriba-p espacio-bottom-p">
@@ -82,7 +82,7 @@ get_header();
     </div>
     </div>
   </section>
-
+  </div>
 <?php
 get_footer();
 ?>
