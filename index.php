@@ -44,6 +44,13 @@ get_header();
             <?php
             if ( have_posts() ) : 
                 while ( have_posts() ) : the_post(); 
+
+                if(get_the_post_thumbnail_url() != ""){
+                  $url_image = get_the_post_thumbnail_url();
+                }else{
+                  $url_image = get_site_url()."/assets/img/service.jpg";
+                }
+
             ?>
              
                     <div class="col-md-12 col-sm-12 portfolio-item">
@@ -51,8 +58,9 @@ get_header();
                      <div class="card" style="width: 100%;">
                     <div class="row">
                         <div class="col-md-4">
-                            <a class="imagen" href="<?php echo get_permalink(); ?>">
-                        <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""> 
+                        <a class="imagen" href="<?php echo get_permalink(); ?>">
+                        
+                        <img class="img-fluid img-list-service" src="<?php echo $url_image; ?>" alt=""> 
                       </a>
                         </div>
                         <div class="col-md-8">
