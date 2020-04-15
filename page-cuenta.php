@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page blank container
+Template Name: Page mi cuenta home
 */
 
 get_header();
