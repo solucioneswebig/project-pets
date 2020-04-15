@@ -40,9 +40,9 @@ $fondo = "background: #000 !important;";
 		<div class="row">
             <div class="col-md-3">
             <div class="list-group">
-            <a href="<?php echo get_site_url(); ?>/mi-cuenta/" class="list-group-item list-group-item-action active">Panel de control</a>
-            <a href="<?php echo get_site_url(); ?>/mi-cuenta/?lista_servicios" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "list"){ echo "active"; } ?>">Lista servicios</a>
-            <a href="<?php echo get_site_url(); ?>/mi-cuenta/?propuestas_recibidas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "propuestas_recibidas" || $_GET["slug"] == "add_new" || $_GET["slug"] == "edit_post"){ echo "active"; } ?>">Propuestas recibidas</a>
+            <a href="<?php echo get_site_url(); ?>/mi-cuenta/" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"])){ }else{ echo "active"; } ?>">Panel de control</a>
+            <a href="<?php echo get_site_url(); ?>/mi-cuenta/?lista_servicios" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "list" || $_GET["slug"] == "add_new" || $_GET["slug"] == "edit_post"){ echo "active"; } ?>">Lista servicios</a>
+            <a href="<?php echo get_site_url(); ?>/mi-cuenta/?propuestas_recibidas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "propuestas_recibidas"){ echo "active"; } ?>">Propuestas recibidas</a>
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?propuestas_enviadas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "propuestas_enviadas"){ echo "active"; } ?>">Propuestas enviadas</a>
             </div>
             </div> 
