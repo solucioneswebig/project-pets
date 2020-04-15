@@ -80,7 +80,7 @@ get_header();
                // the_content();
                 endwhile;
             else :
-                _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+                _e( 'Lamentamos no se encontraron servicios solicitados en esta categoria.', 'textdomain' );
             endif;
 
             ?>

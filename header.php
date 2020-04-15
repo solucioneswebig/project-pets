@@ -16,7 +16,10 @@ Header
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 <div class="container">
-  <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" width="150px"></a>
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+  <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" id="logo_header_blanco" alt="" width="150px">
+  <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" id="logo_header_azul" style="display:none;" alt="" width="150px">
+  </a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
   </button>
@@ -54,6 +57,22 @@ Header
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/ayuda/">Ayuda</a>
       </li>
+      <?php 
+        if(is_user_logged_in()):
+      ?>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/mi-cuenta/"><i class="fa fa-user-edit"></i> Mi cuenta</a>
+      </li>
+      <?php 
+        else:
+      ?>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/acceder/"><i class="fa fa-sign-in-alt"></i> Acceder / <i class="fa fa-user-plus"></i> Registrate</a>
+      </li>
+      <?php 
+      endif;
+      ?>
+
     </ul>
   </div>
 </div>

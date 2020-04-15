@@ -57,8 +57,12 @@ $('.owl-carousel').owlCarousel({
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-scrolled");
+      $("#logo_header_blanco").hide();
+      $("#logo_header_azul").show();
     } else {
       $("#mainNav").removeClass("navbar-scrolled");
+      $("#logo_header_blanco").show();
+      $("#logo_header_azul").hide();
     }
   };
   // Collapse now if page is not at top
