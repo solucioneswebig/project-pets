@@ -46,6 +46,9 @@ $fondo = "background: #000 !important;";
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=propuestas_enviadas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "propuestas_enviadas"){ echo "active"; } ?>">Propuestas enviadas</a>
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=mis_finanzas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "mis_finanzas"){ echo "active"; } ?>">Mis finanzas</a>
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=editar_perfil" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "editar_perfil"){ echo "active"; } ?>">Editar perfil</a>
+            <a href="https://solucioneswebig.com/morgan/wp-login.php?action=logout" class="list-group-item list-group-item-action">Salir</a>
+
+            
             </div>
             </div> 
 			<div class="col-md-9">
