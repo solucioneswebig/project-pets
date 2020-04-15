@@ -41,7 +41,7 @@ $fondo = "background: #000 !important;";
             <div class="col-md-3">
             <div class="list-group">
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"])){ }else{ echo "active"; } ?>">Panel de control</a>
-            <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=lista_servicios" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "lista_servicios" || $_GET["slug"] == "add_new" || $_GET["slug"] == "edit_post"){ echo "active"; } ?>">Lista servicios</a>
+            <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=lista_servicios" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "lista_servicios" || isset($_GET["slug"]) && $_GET["slug"] == "add_new" || isset($_GET["slug"]) && $_GET["slug"] == "edit_post"){ echo "active"; } ?>">Lista servicios</a>
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=propuestas_recibidas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "propuestas_recibidas"){ echo "active"; } ?>">Propuestas recibidas</a>
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=propuestas_enviadas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "propuestas_enviadas"){ echo "active"; } ?>">Propuestas enviadas</a>
             </div>
