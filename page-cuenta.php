@@ -44,6 +44,8 @@ $fondo = "background: #000 !important;";
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=lista_servicios" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "lista_servicios" || isset($_GET["slug"]) && $_GET["slug"] == "add_new" || isset($_GET["slug"]) && $_GET["slug"] == "edit_post"){ echo "active"; } ?>">Lista servicios</a>
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=propuestas_recibidas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "propuestas_recibidas"){ echo "active"; } ?>">Propuestas recibidas</a>
             <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=propuestas_enviadas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "propuestas_enviadas"){ echo "active"; } ?>">Propuestas enviadas</a>
+            <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=mis_finanzas" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "mis_finanzas"){ echo "active"; } ?>">Mis finanzas</a>
+            <a href="<?php echo get_site_url(); ?>/mi-cuenta/?slug=editar_perfil" class="list-group-item list-group-item-action <?php if(isset($_GET["slug"]) && $_GET["slug"] == "editar_perfil"){ echo "active"; } ?>">Editar perfil</a>
             </div>
             </div> 
 			<div class="col-md-9">
