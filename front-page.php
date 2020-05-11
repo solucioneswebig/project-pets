@@ -56,7 +56,7 @@ get_header();
           <div class="col-lg-3 col-md-3">
             <div class="icon-box">
               <div class="icon"> <i class="fas fa-4x fa-child icon-blue"></i></div>
-              <h4 class="title"><a href="">Cuidado de niñ@s</a></h4>
+              <h4 class="title"><a href="">Cuidado de niños</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
           </div>

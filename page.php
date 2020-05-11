@@ -7,7 +7,7 @@ while ( have_posts() ) : the_post();
 $url_image = get_the_post_thumbnail_url();
 
 if(!$url_image){
-$fondo = "background: #000 !important;";
+$fondo = "background: linear-gradient(90deg, rgba(18,9,171,1) 0%, rgba(37,51,236,1) 35%, rgba(0,212,255,1) 100%) !important;";
 }else{
   $fondo = "background-image: url(".$url_image.") !important;";
 }
@@ -17,7 +17,7 @@ $fondo = "background: #000 !important;";
 <!-- PAGINA PAGE.PHP -->
 
  <header class="fondo-blog-interna" style="<?php echo $fondo; ?>">
-    <div class="transparente" style="background-color: #000;">
+    <div class="transparente">
     <div class="container">
       <div class="row justify-content-center">
       <div class="col-md-10 m-auto">

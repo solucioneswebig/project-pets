@@ -6,7 +6,7 @@ get_header();
 
     $url_image = get_the_post_thumbnail_url();
 
-    $fondo = "background: #000 !important;";
+    $fondo = "background: linear-gradient(90deg, rgba(18,9,171,1) 0%, rgba(37,51,236,1) 35%, rgba(0,212,255,1) 100%) !important;;";
 
     $categorias = get_term(get_the_ID());
 
@@ -18,7 +18,7 @@ get_header();
    <!-- PAGINA INDEX.PHP -->
   <!-- Header -->
   <header class="fondo-blog" style="<?php echo $fondo; ?>">
-    <div class="transparente" style="background-color: #00000080;">
+    <div class="transparente">
     <div class="container">
       <div class="row justify-content-center">
       <div class="col-md-10">
@@ -41,7 +41,7 @@ get_header();
          <?php get_sidebar(); ?>
       </div>
       <div class="col-md-9">
-         <div class="row">
+         <div class="row lista-servicios">
             <?php
             if ( have_posts() ) : 
                 while ( have_posts() ) : the_post(); 
@@ -52,29 +52,77 @@ get_header();
                   $url_image = get_theme_file_uri()."/assets/img/service.jpg";
                 }
 
+                if(get_the_post_thumbnail_url() != ""){
+                  $url_icon = get_the_post_thumbnail_url();
+                }else{
+
+                  $url_icon = get_theme_file_uri()."/assets/img/user-icon.png";
+                  
+                }
+                $id_post = get_the_ID();
+                $id_user = get_current_user_id();
+                $buscar_propuesta = $wpdb->get_row("SELECT * FROM ".TABLA_DATOS_PROPUESTAS." WHERE id_user = ".$id_user." AND id_post = ".$id_post."");               
+
             ?>
              
-                    <div class="col-md-12 col-sm-12 portfolio-item">
+             <div class="col-md-12 col-sm-12 portfolio-item mt-3">
                       
-                     <div class="card" style="width: 100%;">
-                    <div class="row">
-                        <div class="col-md-4">
-                        <a class="imagen" href="<?php echo get_permalink(); ?>">
-                        
-                        <img class="img-fluid img-list-service" src="<?php echo $url_image; ?>" alt=""> 
-                      </a>
-                        </div>
-                        <div class="col-md-8">
-                              <div class="card-body text-left main">
-                                 <a href="<?php echo get_permalink(); ?>"><h5 class="main font-weight-bold text-uppercase"><?php echo the_title(); ?></h5></a>
-                                <p class="main"><?php echo the_excerpt(); ?></p>
-                                <a class="text-left main" href="<?php echo get_permalink(); ?>">Ver más</a>
-                              </div>
-                          </div>
-                    </div>
-                  
-                </div>
-                    </div>
+                    <div class="card card-servicios">
+                     <div class="row">
+                         <div class="col-md-12">
+                               <div class="card-body text-left main">
+                                 <div class="row">
+
+                                     <div class="col-md-12 text-left">
+                                     <?php if($buscar_propuesta): ?>
+                                        <span class="badge badge-success">Ya enviaste una propuesta</span>
+                                     <?php endif; ?>
+                                     <a href="<?php echo get_permalink(); ?>"><h5 class="main font-weight-bold text-uppercase"><?php echo the_title(); ?></h5></a>
+                                     </div>
+                                     <div class="col-md-6 text-left">
+                                     <h6><strong>Publicado:</strong> 01/05/2020</h6>
+                                     <?php
+                                      $categories = get_the_category();
+                                      
+                                      if (!empty($categories)) {
+                                          foreach ($categories as $category) {
+                                              echo esc_html( $category->name );
+                                          }
+                                      }
+                                      ?>
+                                     </div>
+                                     <div class="col-md-6 text-right">
+                                       <strong>Presupuesto:</strong> $ 1.000,00
+                                     </div>
+                                     <div class="col-md-4 mb-3">
+                                     <img src="<?php echo $url_image; ?>" style="width:100%;height:100%;object-fit:cover;border-radius:50%;min-height:230px;box-shadow: 2px 2px 5px rgba(0,0,0,.3);">
+                                     </div>
+                                     <div class="col-md-8 text-justify">
+                                     <p class="">
+                                     <?php echo the_excerpt(); ?>
+                                     </p>
+                                     </div>
+                                     <div class="col-md-6 text-left">
+                                     <img src="<?php echo $url_icon; ?>" class="d-inline-block" style="width:60px;height:60px;object-fit:cover;border-radius:50%;box-shadow: 1px 1px 1px rgba(0,0,0,.3);margin-top: -30px;">
+                                     <span class="d-inline-block">
+                                     <h6><strong></strong> <?php echo get_the_author_meta("display_name"); ?></h6>
+                                     <h6><i class="fa fa-star" style="color:orange;"></i> 5.00</h6>
+                                     </span>
+                                     </div>
+                                     <div class="col-md-6 text-right mb-3">
+                                     <?php if($buscar_propuesta): ?>
+                                     <a class="text-left main btn btn-servicios" href="<?php echo get_permalink(); ?>">Modificar propuesta</a>
+                                     <?php else: ?>
+                                      <a class="text-left main btn btn-servicios" href="<?php echo get_permalink(); ?>">Enviar propuesta</a>
+                                     <?php endif; ?>
+                                     </div>
+                                 </div>
+                               </div>
+                           </div>
+                     </div>
+                   
+                 </div>
+               </div>
 
             <?php
                // the_content();
@@ -84,7 +132,10 @@ get_header();
             endif;
 
             ?>
+           
         </div>
+        <div class="row"> <div class="col-md-12 text-right"><?php wpbeginner_numeric_posts_nav(); ?></div></div>
+       
       </div>
       </div>
     </div>

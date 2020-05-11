@@ -7,7 +7,7 @@ get_header();
     $url_image = get_the_post_thumbnail_url();
 
     if(!$url_image){
-    $fondo = "background: #000 !important;";
+    $fondo = "background: linear-gradient(90deg, rgba(18,9,171,1) 0%, rgba(37,51,236,1) 35%, rgba(0,212,255,1) 100%) !important;";
     }else{
       $fondo = "background-image: url(".$url_image.") !important;";
     }
@@ -17,7 +17,7 @@ get_header();
    <!-- PAGINA INDEX.PHP -->
   <!-- Header -->
   <header class="fondo-blog" style="<?php echo $fondo; ?>">
-    <div class="transparente" style="background-color: #00000080;">
+    <div class="transparente">
     <div class="container">
       <div class="row justify-content-center">
       <div class="col-md-10">
@@ -53,27 +53,31 @@ get_header();
 
             ?>
              
-                    <div class="col-md-12 col-sm-12 portfolio-item">
+              <div class="col-md-12 col-sm-12 portfolio-item">
                       
                      <div class="card" style="width: 100%;">
                     <div class="row">
-                        <div class="col-md-4">
-                        <a class="imagen" href="<?php echo get_permalink(); ?>">
-                        
-                        <img class="img-fluid img-list-service" src="<?php echo $url_image; ?>" alt=""> 
-                      </a>
-                        </div>
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                               <div class="card-body text-left main">
-                                 <a href="<?php echo get_permalink(); ?>"><h5 class="main font-weight-bold text-uppercase"><?php echo the_title(); ?></h5></a>
-                                <p class="main"><?php echo the_excerpt(); ?></p>
-                                <a class="text-left main" href="<?php echo get_permalink(); ?>">Ver más</a>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    <a href="<?php echo get_permalink(); ?>"><h5 class="main font-weight-bold text-uppercase"><?php echo the_title(); ?></h5></a>
+                                    </div>
+                                    <div class="col-md-12">
+                                    <p><?php 
+                                    $texto = the_excerpt();
+                                    echo substr($texto, 0,10); ?></p>
+                                    </div>
+                                    <div class="col-md-12">
+                                    <a class="text-left main" href="<?php echo get_permalink(); ?>">Ver más</a>
+                                    </div>
+                                </div>
                               </div>
                           </div>
                     </div>
                   
                 </div>
-                    </div>
+              </div>
 
             <?php
                // the_content();
