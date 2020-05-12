@@ -1,12 +1,11 @@
 .header-banner{
-  background-image: url(../../assets/img/banner1.jpg);
+  background-image: url("../../assets/img/banner1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@charset "UTF-8";
 /*!
 * Start Bootstrap - Creative v6.0.1 (https://startbootstrap.com/themes/creative)
 * Copyright 2013-2020 Start Bootstrap
