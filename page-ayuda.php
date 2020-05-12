@@ -7,25 +7,31 @@ get_header();
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post();
 
-?>
+    $url_image = get_the_post_thumbnail_url();
 
- <header class="fondo-blog-interna" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/img/mascota.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;">
-    <div class="transparente" style="background-color: #00000088;">
-    <div class="container">
-      <div class="row justify-content-center">
-      <div class="col-md-10 m-auto">
-      <div class="intro-text">
-        <h1 class="titulo-blog-interna text-center pb-5">Ayuda</h1>
-      </div>
-      </div>
-      </div>
-    </div>
-    </div>
-  </header>
+    if(!$url_image){
+      $fondo = "background: linear-gradient(90deg, rgba(18,9,171,1) 0%, rgba(37,51,236,1) 35%, rgba(0,212,255,1) 100%) !important;";
+      }else{
+        $fondo = "background-image: url(".$url_image.") !important;";
+      }
+          
+    
+    ?> 
+    <!-- PAGINA PAGE.PHP -->
+    
+     <header class="fondo-blog-interna" style="<?php echo $fondo; ?>">
+        <div class="transparente">
+        <div class="container">
+          <div class="row justify-content-center">
+          <div class="col-md-10 m-auto">
+          <div class="intro-text">
+            <h1 class="titulo-blog-interna text-center pb-5"><?php echo the_title(); ?></h1>
+          </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </header> 
 
 
   <section class="py-5 bg-light">
