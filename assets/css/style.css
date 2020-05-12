@@ -10224,11 +10224,9 @@ header.masthead h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 4.5rem;
-    padding-bottom: 0;
-  }
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
   header.masthead p {
     font-size: 1.15rem;
   }
@@ -10238,8 +10236,8 @@ header.masthead h1 {
 }
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 3.5rem;
-  }
+    font-size: 36px;
+}
 }
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {

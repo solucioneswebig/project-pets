@@ -32,11 +32,12 @@
 				?>
 				<li class="list-group-item d-flex justify-content-between align-items-center">
 					<a href="<?php echo esc_url( get_term_link( $value->term_id,"categoria_servicios" ) ); ?>"> <?php echo $value->name; ?>
-					<span class="badge badge-primary badge-pill">
+					
+					<!--<span class="badge badge-primary badge-pill">
 						<?php 
 						echo wp_get_postcount($value->term_id);
 						?>
-					</span></a>
+					</span>--></a>
 				</li>
 				<?php 
 				endforeach;
