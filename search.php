@@ -1,8 +1,18 @@
 <?php
 get_header();
-?>
+$url_image = get_the_post_thumbnail_url();
+
+if(!$url_image){
+  $fondo = "background: linear-gradient(90deg, rgba(18,9,171,1) 0%, rgba(37,51,236,1) 35%, rgba(0,212,255,1) 100%) !important;";
+  }else{
+    $fondo = "background-image: url(".$url_image.") !important;";
+  }
+      
+
+?> 
+<!-- PAGINA PAGE.PHP -->
+
  <header class="fondo-blog-interna" style="<?php echo $fondo; ?>">
-    <div class="transparente" style="background-color: #000;">
     <div class="container">
       <div class="row justify-content-center">
       <div class="col-md-10 m-auto">
@@ -47,6 +57,12 @@ get_header();
                   $url_image = get_theme_file_uri()."/assets/img/service.jpg";
                 }
                 
+                $id_current_user = get_current_user_id();
+
+                $author_id = get_the_author_meta("ID");
+
+                if($id_current_user != $author_id ){
+
                 if(get_post_type() == "servicios"):
             ?>
              
@@ -97,6 +113,7 @@ get_header();
 
             <?php
             endif;
+            }
                // the_content();
                 endwhile;
             else :

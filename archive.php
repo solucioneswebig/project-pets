@@ -46,6 +46,12 @@ get_header();
             if ( have_posts() ) : 
                 while ( have_posts() ) : the_post(); 
 
+                $id_current_user = get_current_user_id();
+
+                $author_id = get_the_author_meta("ID");
+
+                if($id_current_user != $author_id ){
+
                 if(get_the_post_thumbnail_url() != ""){
                   $url_image = get_the_post_thumbnail_url();
                 }else{
@@ -125,6 +131,7 @@ get_header();
                </div>
 
             <?php
+              }
                // the_content();
                 endwhile;
             else :
