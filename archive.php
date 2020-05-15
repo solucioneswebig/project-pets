@@ -86,7 +86,7 @@ get_header();
                                      <a href="<?php echo get_permalink(); ?>"><h5 class="main font-weight-bold text-uppercase"><?php echo the_title(); ?></h5></a>
                                      </div>
                                      <div class="col-md-6 text-left">
-                                     <h6><strong>Publicado:</strong> 01/05/2020</h6>
+                                     <h6><strong>Publicado:</strong> <?php  echo get_the_date( 'd/m/Y' ); ?></h6>
                                      <?php
                                       $categories = get_the_category();
                                       
@@ -98,7 +98,7 @@ get_header();
                                       ?>
                                      </div>
                                      <div class="col-md-6 text-right">
-                                       <strong>Presupuesto:</strong> $ 1.000,00
+                                       <strong>Presupuesto:</strong> <?php echo $presupuesto = get_post_meta( $id_post, 'precio-servicio', true ); ?>
                                      </div>
                                      <div class="col-md-4 mb-3">
                                      <img src="<?php echo $url_image; ?>" style="width:100%;height:100%;object-fit:cover;border-radius:50%;min-height:230px;box-shadow: 2px 2px 5px rgba(0,0,0,.3);">
@@ -112,7 +112,7 @@ get_header();
                                      <img src="<?php echo $url_icon; ?>" class="d-inline-block" style="width:60px;height:60px;object-fit:cover;border-radius:50%;box-shadow: 1px 1px 1px rgba(0,0,0,.3);margin-top: -30px;">
                                      <span class="d-inline-block">
                                      <h6><strong></strong> <?php echo get_the_author_meta("display_name"); ?></h6>
-                                     <h6><i class="fa fa-star" style="color:orange;"></i> 5.00</h6>
+                                     <h6><i class="fa fa-star" style="color:orange;"></i> 0.00</h6>
                                      </span>
                                      </div>
                                      <div class="col-md-6 text-right mb-3">

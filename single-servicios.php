@@ -97,9 +97,12 @@ if(isset($_POST["guardar_propuesta"])){
       <div class="intro-text">
      
       <h1 class="titulo-blog-interna text-left pb-5"> 
+        
         <span class="badge badge-warning">Evaluando Propuestas</span> 
+        <!-- 
         <span class="badge badge-danger">Cancelado</span> 
-        <span class="badge badge-success">Trabajando</span> 
+        <span class="badge badge-success">Trabajando</span>
+        --> 
         <br><?php echo the_title(); ?><span class="span-publicado">Publicado el <?php echo get_the_date(); ?> en <?php echo $terms_string; ?></span></h1>
         
       </div>
@@ -234,7 +237,7 @@ if(isset($_POST["guardar_propuesta"])){
                 <div class="text-left mt-3 text-secondary">
                 <h6><strong>Trabajos publicados:</strong> 1 </h6>
                 <h6><strong>Trabajos pagados:</strong> 0 </h6>
-                <h6><strong>Miembro desde:</strong> <?php echo $user_author_data->user_registered; ?> </h6>
+                <h6><strong>Miembro desde:</strong> <?php echo date("M Y", strtotime($user_author_data->user_registered)); ?> </h6>
                 </div>                
 
                 <div class="text-left mt-3 text-secondary">
