@@ -243,7 +243,8 @@ if(isset($_POST["guardar_propuesta"])){
                 <div class="text-left mt-3 text-secondary">
                 <h4>Datos del trabajo:</h4>
                 <h6><strong>Propuestas recibidas:</strong> 0 </h6>
-                <button type="button" class="btn btn-propuesta messenger" id-user="<?php echo get_current_user_id(); ?>" id-post="<?php echo $id_post; ?>" id-autor="<?php echo $id_autor ?>">Enviar Mensaje</button>
+
+                
                 </div>
 
               </div>
@@ -274,52 +275,3 @@ get_footer();
 ?>
 
 
-<div class="container-fluid h-100 d-none posision-chat" id="chat">
-			<div class="row justify-content-center h-100">
-				
-				<div class="col-md-4 offset-md-8 chat posicion-caja">
-					<div class="card">
-						<div class="card-header msg_head">
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img">
-									<span class="online_icon"></span>
-								</div>
-								<div class="user_info">
-									<span>Chat with Khalid</span>
-									<p>1767 Messages</p>
-								</div>
-								<div class="video_cam">
-									<!-- <span><i class="fas fa-video"></i></span> -->
-									<!-- <span><i class="fas fa-phone"></i></span> -->
-								</div>
-							</div>
-							<!-- <span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
-							<div class="action_menu">
-								<ul>
-									<li><i class="fas fa-user-circle"></i> View profile</li>
-									<li><i class="fas fa-users"></i> Add to close friends</li>
-									<li><i class="fas fa-plus"></i> Add to group</li>
-									<li><i class="fas fa-ban"></i> Block</li>
-								</ul>
-							</div> -->
-						</div>
-						<div class="card-body msg_card_body">
-              
-							
-						</div>
-						<div class="card-footer">
-							<div class="input-group">
-								<div class="input-group-append">
-									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
-								</div>
-								<textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
-								<div class="input-group-append">
-									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
