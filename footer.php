@@ -49,7 +49,7 @@
 			<div class="row justify-content-center h-100">
 				
 				<div class="chat posicion-caja">
-					<div class="card">
+					<div class="card card-chat">
 						<div class="card-header msg_head">
 							<div class="d-flex bd-highlight justify-content-between">
 								<div class="img_cont d-flex justify-content-center align-items-center">
