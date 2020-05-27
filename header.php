@@ -66,6 +66,33 @@ Header
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="<?php echo get_site_url(); ?>/mi-cuenta/"><i class="fa fa-user-edit"></i> Mi cuenta</a>
       </li>
+      <li class="nav-item">
+      
+      <?php 
+      
+        $buscar_mensajes = $wpdb->get_results("SELECT * FROM ".TABLA_DATOS_CHAT." WHERE id_cliente = ".get_current_user_id()." order by id_chat DESC LIMIT 5");
+
+        $contar_mensajes = $wpdb->get_results("SELECT * FROM ".TABLA_DATOS_CHAT." WHERE id_cliente = ".get_current_user_id()." order by id_chat DESC");
+        
+        // var_dump($buscar_mensajes);
+      ?>
+      <div class="dropdown dropleft">
+          <a class="nav-link js-scroll-trigger dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell"> <?php echo COUNT($contar_mensajes) ?></i></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <?php
+            foreach($buscar_mensajes as $value):
+            
+          ?>
+            <a class="dropdown-item h6 messenger" href="#" id-user="<?php echo $value->id_user; ?>" id-post="<?php echo $value->id_post; ?>" id-cliente="<?php echo $value->id_cliente; ?>"><i class="far fa-sticky-note"></i> <?php echo substr($value->mensaje, 0, 14) ."..."; ?></a>
+            <div class="dropdown-divider"></div>
+          <?php 
+          
+              endforeach;
+          ?>
+          </div>
+        </div>
+        
+      </li>
       <?php 
         else:
       ?>

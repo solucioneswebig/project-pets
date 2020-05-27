@@ -34,7 +34,7 @@ if(get_the_post_thumbnail_url() != ""){
 }
 
 $user_author_data = get_user_by('id',get_the_author_meta( 'ID' ));    
-
+$id_autor = get_the_author_meta( 'ID' );
 
 if(isset($_POST["guardar_propuesta"])){
  
@@ -243,12 +243,21 @@ if(isset($_POST["guardar_propuesta"])){
                 <div class="text-left mt-3 text-secondary">
                 <h4>Datos del trabajo:</h4>
                 <h6><strong>Propuestas recibidas:</strong> 0 </h6>
+
+                
                 </div>
 
               </div>
           </div>
     </div>
 </section>
+
+
+
+
+
+
+
 
 
 
@@ -264,3 +273,5 @@ endif;
  
 get_footer();
 ?>
+
+
