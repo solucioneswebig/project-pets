@@ -45,8 +45,8 @@
 
     $cu = wp_get_current_user();
 ?>
-<div class="container-fluid h-100 d-none posision-chat" id="chat">
-			<div class="row justify-content-center h-100">
+<div class="container-fluid d-none posision-chat" id="chat">
+			<div class="row justify-content-center">
 				
 				<div class="chat posicion-caja">
 					<div class="card">
