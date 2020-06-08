@@ -84,7 +84,7 @@ Header
             foreach($buscar_mensajes as $value):
             
           ?>
-            <a class="dropdown-item h6 messenger" href="#" id-user="<?php echo $value->id_user; ?>" id-post="<?php echo $value->id_post; ?>" id-cliente="<?php echo $value->id_cliente; ?>"><i class="far fa-sticky-note"></i> <?php echo substr($value->mensaje, 0, 14) ."..."; ?></a>
+            <a class="dropdown-item h6 messenger" href="#" id-user="<?php echo $value->id_user; ?>" id-post="<?php echo $value->id_post; ?>" id-cliente="<?php echo $value->id_cliente; ?>" id_enviado="<?php echo get_current_user_id() ?>"><i class="far fa-sticky-note"></i> <?php echo substr($value->mensaje, 0, 14) ."..."; ?></a>
             <div class="dropdown-divider"></div>
           <?php 
           
