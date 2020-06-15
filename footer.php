@@ -45,7 +45,6 @@
 <?php echo do_shortcode( '[chat_grupal]' ); ?>
 
 
-
 </body>
 </html>
 <?php
