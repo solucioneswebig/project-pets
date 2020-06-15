@@ -72,18 +72,19 @@ Header
       
         $buscar_mensajes = $wpdb->get_results("SELECT * FROM ".TABLA_DATOS_CHAT." WHERE id_cliente = ".get_current_user_id()." order by id_chat DESC LIMIT 5");
 
-        $contar_mensajes = $wpdb->get_results("SELECT * FROM ".TABLA_DATOS_CHAT." WHERE id_cliente = ".get_current_user_id()." order by id_chat DESC");
+
+        $contar_mensajes = $wpdb->get_results("SELECT * FROM ".TABLA_DATOS_CHAT." WHERE id_cliente = ".get_current_user_id()." GROUP BY id_user");
         
         // var_dump($buscar_mensajes);
       ?>
       <div class="dropdown dropleft">
-          <a class="nav-link js-scroll-trigger dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell"> <?php echo COUNT($contar_mensajes) ?></i></a>
+          <a class="nav-link js-scroll-trigger dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell notificar" id-cliente="<?php echo get_current_user_id() ?>"> <?php echo COUNT($contar_mensajes) ?></i></a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
           <?php
             foreach($buscar_mensajes as $value):
             
           ?>
-            <a class="dropdown-item h6 messenger" href="#" id-user="<?php echo $value->id_user; ?>" id-post="<?php echo $value->id_post; ?>" id-cliente="<?php echo $value->id_cliente; ?>"><i class="far fa-sticky-note"></i> <?php echo substr($value->mensaje, 0, 14) ."..."; ?></a>
+            <a class="dropdown-item h6 messenger" href="#" id-user="<?php echo $value->id_user; ?>" id-post="<?php echo $value->id_post; ?>" id-cliente="<?php echo $value->id_cliente; ?>" id_enviado="<?php echo get_current_user_id() ?>"><i class="far fa-sticky-note"></i> <?php echo substr($value->mensaje, 0, 14) ."..."; ?></a>
             <div class="dropdown-divider"></div>
           <?php 
           
