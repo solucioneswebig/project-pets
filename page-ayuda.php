@@ -34,7 +34,7 @@ if ( have_posts() ) :
       </header> 
 
 
-  <section class="py-5 bg-light">
+  <section class="py-5">
       <div class="demo">
     <div class="container">
         <div class="row mb-5">
@@ -211,7 +211,7 @@ if ( have_posts() ) :
   </section>
 
 
-  <section class="py-5">
+<section class="">
     <div class="container">
           <div class="row justify-content-center">
                 <div class="col-md-12">
