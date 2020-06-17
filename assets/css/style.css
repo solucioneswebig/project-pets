@@ -3250,6 +3250,12 @@ input[type=button].btn-block {
   border: 0;
   text-transform: initial;
 }
+
+.section-footer{
+  margin-top: 50px;
+  background: #eaeaea;
+}
+
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;

@@ -1,5 +1,5 @@
 
-  <section>
+  <section class="section-footer">
   <div class="container">
     <div class="row py-5">
       <div class="col-md-3">
