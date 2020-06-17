@@ -222,7 +222,7 @@ if ( have_posts() ) :
 </section>
 
 
-  <!-- Contact section-->
+  <!-- Contact section
         <section class="contactanos" id="contact">
             <div class="wrapper-contact">
             <div class="container py-5">
@@ -239,14 +239,14 @@ if ( have_posts() ) :
                         <div class="text-dark">+1 (555) 123-4567</div>
                     </div>
                     <div class="col-lg-4 mr-auto text-center text-dark">
-                        <i class="fas fa-envelope text-dark fa-3x mb-3"></i
-                        ><!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block text-dark" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                        <i class="fas fa-envelope text-dark fa-3x mb-3"></i>
+                        <a class="d-block text-dark" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
                     </div>
                 </div>
             </div>
             </div>
         </section>
-
+        -->
 
 <?php
 

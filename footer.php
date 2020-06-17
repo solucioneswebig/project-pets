@@ -47,10 +47,10 @@
 
       <h6>Más info:</h6>
       <a href="#"><p class="pb-0 mb-0">Ayuda</p></a>
-      <a href="#"><p class="pb-0 mb-0">Ayuda</p></a>
-      <a href="#"><p class="pb-0 mb-0">Ayuda</p></a>
-      <a href="#"><p class="pb-0 mb-0">Ayuda</p></a>
-      <a href="#"><p class="pb-0 mb-0">Ayuda</p></a>                        
+      <a href="#"><p class="pb-0 mb-0">Lorem ipsum dolor sit amet</p></a>
+      <a href="#"><p class="pb-0 mb-0">Lorem ipsum dolor sit</p></a>
+      <a href="#"><p class="pb-0 mb-0">Lorem ipsum dolor</p></a>
+      <a href="#"><p class="pb-0 mb-0">Lorem ipsum dolor sit</p></a>                        
       </div>          
       </div>      
     </div>
