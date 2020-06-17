@@ -12,7 +12,8 @@ get_header();
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-10">
                         <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source Lorem Ipsum Themes</h1>
-                        <form id="searchform" method="get" action="https://solucioneswebig.com/morgan/"> 
+                        <h3 class="text-uppercase text-white font-weight-bold">Your Favorite Source Lorem Ipsum Themes</h3>
+                        <!--<form id="searchform" method="get" action="https://solucioneswebig.com/morgan/"> 
                         <div class="form-group">
                         <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Has una nueva busqueda..." aria-label="Recipient's username" aria-describedby="button-addon2" name="s" value="">
@@ -21,7 +22,7 @@ get_header();
                         </div>
                         </div>
                         </div>
-                        </form>
+                        </form>-->
                     </div>
                 </div>
             </div>
@@ -38,35 +39,43 @@ get_header();
         -->
         <div class="row pb-5 py-5">
           <div class="col-lg-3 col-md-3">
+            <a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/">
             <div class="icon-box">
               <div class="icon"> <i class="fas fa-paw icon-blue"></i></div>
-              <h4 class="title"><a href="">Mascotas</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/">Mascotas</a></h4>
+              <a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/"><p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p></a>
             </div>
+            </a>
           </div>
 
           <div class="col-lg-3 col-md-3">
+          <a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/">
             <div class="icon-box">
               <div class="icon"> <i class="fas fa-4x fa-child icon-blue"></i></div>
-              <h4 class="title"><a href="">Cuidado de niños</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/">Cuidado de niños</a></h4>
+              <a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/"><p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p></a>
             </div>
+           </a> 
           </div>
 
           <div class="col-lg-3 col-md-3">
+          <a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-4x fa-blind icon-blue"></i></div>
-              <h4 class="title"><a href="">Cuidado de Ancianos</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <h4 class="title"><a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/">Cuidado de Ancianos</a></h4>
+              <a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/"><p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></a>
             </div>
+          </a>   
           </div>
 
           <div class="col-lg-3 col-md-3">
+          <a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-4x fa-running icon-blue"></i></div>
-              <h4 class="title"><a href="">Personal Trainer</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <h4 class="title"><a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/">Personal Trainer</a></h4>
+              <a href="<?php echo get_site_url(); ?>/categorias-servicios/cuidado-de-ninos/"><p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></a>
             </div>
+          </a>  
           </div>
 
         </div>
