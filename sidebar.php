@@ -8,7 +8,7 @@
  */
 ?>
 <div id="secondary">
-			 <label for="">Busqueda:</label>
+			 <!--<label for="">Busqueda:</label>
              <form id="searchform" method="get" action="<?php echo home_url('/'); ?>"> 
              <div class="form-group">
                 <div class="input-group mb-3">
@@ -18,7 +18,7 @@
                 </div>
                 </div>
                 </div>
-				</form>   
+				</form> --> 
 				<ul class="list-group">
 
 				<?php 
