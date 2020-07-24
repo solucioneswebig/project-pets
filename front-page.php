@@ -142,65 +142,44 @@ get_header();
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
 
+                <?php 
+                
+                $args = array(
+                    'post_type' => 'post'
+                );
+
+                $query = new WP_Query( $args );
+
+                ?>
+
+
+                    <?php
+                    if($query->have_posts()) : 
+                        while($query->have_posts()) : 
+                          $query->the_post(); 
+
+                        $featured_img_url = get_the_post_thumbnail_url(); 
+                    ?>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg"
-                            ><img class="img-fluid galery" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbnails/11.png" alt="" />
+                        <a class="portfolio-box" href="<?php the_permalink(); ?>"
+                            ><img class="img-fluid galery" src="<?php echo $featured_img_url; ?>" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Pets MP</div>
+                                <!--<div class="project-category text-white-50">Category</div>-->
+                                <div class="project-name"><?php echo get_the_title(); ?></div>
                             </div></a
                         >
                     </div>
+                    <?php
+                        endwhile;
+                    else : 
+                    ?>
+                        Vaya, no hay entradas.
+                    <?php
+                    endif;
+                    ?>
 
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg"
-                            ><img class="img-fluid galery" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbnails/55.jpeg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Pets MP</div>
-                            </div></a
-                        >
-                    </div>
 
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg"
-                            ><img class="img-fluid galery" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbnails/22.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Pets MP</div>
-                            </div></a
-                        >
-                    </div>
 
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg"
-                            ><img class="img-fluid galery" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbnails/66.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Pets MP</div>
-                            </div></a
-                        >
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg"
-                            ><img class="img-fluid galery" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbnails/44.jpg" alt="" />
-                            <div class="portfolio-box-caption"> 
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Pets MP</div>
-                            </div></a
-                        >
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg"
-                            ><img class="img-fluid galery" src="<?php echo get_template_directory_uri(); ?>/assets/img/portfolio/thumbnails/33.png" alt="" />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Pets MP</div>
-                            </div></a
-                        >
-                    </div>
 
                 </div>
             </div>
